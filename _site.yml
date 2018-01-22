@@ -1,9 +1,24 @@
-name: "nicks-website"
+name: "rworkshop-website"
 output_dir: "."
 navbar:
-  title: "Nicks Website"
+  title: "R Workshop 01/2018"
   left:
     - text: "Home"
       href: index.html
-    - text: "About Me"
-      href: about.html
+    - text: "Curriculum"
+      menu:
+        - text: "Foundations"
+          href:
+        - text: "Data Import"
+          href:
+        - text: "Data Manipulation with dplyr"
+          href:
+        - text: "Data Tidying with tidyr"
+          href:
+        - text: "Data Visualisation with ggplot2"
+          href:
+        - text: "Data Structures"
+          href:
+output:
+  html_document:
+    theme: flatly

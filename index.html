@@ -11,11 +11,11 @@
 
 
 
-<title>Nick’s Website</title>
+<title>An Introduction to Data Analysis and Visualization in R</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
@@ -99,34 +99,34 @@ button.code-folding-btn:focus {
 <style type="text/css">
 /* padding for bootstrap navbar */
 body {
-  padding-top: 51px;
+  padding-top: 60px;
   padding-bottom: 40px;
 }
 /* offset scroll position for anchor links (for fixed navbar)  */
 .section h1 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 65px;
+  margin-top: -65px;
 }
 
 .section h2 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 65px;
+  margin-top: -65px;
 }
 .section h3 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 65px;
+  margin-top: -65px;
 }
 .section h4 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 65px;
+  margin-top: -65px;
 }
 .section h5 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 65px;
+  margin-top: -65px;
 }
 .section h6 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 65px;
+  margin-top: -65px;
 }
 </style>
 
@@ -173,15 +173,27 @@ $(document).ready(function () {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">Nicks Website</a>
+      <a class="navbar-brand" href="index.html">R Workshop 01/2018</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
   <a href="index.html">Home</a>
 </li>
-<li>
-  <a href="about.html">About Me</a>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Curriculum
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li class="dropdown-header">Foundations</li>
+    <li class="dropdown-header">Data Import</li>
+    <li class="dropdown-header">Data Manipulation with dplyr</li>
+    <li class="dropdown-header">Data Tidying with tidyr</li>
+    <li class="dropdown-header">Data Visualisation with ggplot2</li>
+    <li class="dropdown-header">Data Structures</li>
+  </ul>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -195,12 +207,81 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Nick’s Website</h1>
+<h1 class="title toc-ignore">An Introduction to Data Analysis and Visualization in R</h1>
 
 </div>
 
 
-<p>Hello, World!</p>
+<hr />
+<div id="about" class="section level2">
+<h2>1. About</h2>
+<p>This workshop is designed to provide an accessible introduction to R statistical software by getting participants up and running with practical data analysis exercises. Along the way, you will learn how to transform, visualise, and analyse data in R. After the course, you will be familiar with the tools available in R to perform commonly used data analyses.</p>
+</div>
+<div id="curriculum" class="section level2">
+<h2>2. Curriculum</h2>
+<div id="foundations" class="section level3">
+<h3>Foundations</h3>
+<p>Learn the absolute essentials of R and its ecosystems.</p>
+<ul>
+<li><p>Brief R background, why R</p></li>
+<li><p>RStudio basics, panes, utilities</p></li>
+<li><p>Running R scripts, objects, functions</p></li>
+<li><p>R packages, CRAN, Bioconductor</p></li>
+<li><p>Getting help</p></li>
+<li><p>R community</p></li>
+</ul>
+</div>
+<div id="data-essentials" class="section level3">
+<h3>Data Essentials</h3>
+<p>Learn the most important data types and data structures in R.</p>
+<ul>
+<li><p>Data import: <code>readr</code></p></li>
+<li><p>Data structure basics: vectors, matrices, data frames</p></li>
+<li><p>Factor basics</p></li>
+<li><p>Data exploration basics</p></li>
+</ul>
+</div>
+<div id="data-manipulation" class="section level3">
+<h3>Data Manipulation</h3>
+<p>Learn to explore and properly prepare data for analysis.</p>
+<ul>
+<li><p>Data manipulation basics, <code>dplyr</code>’s sing table verbs</p></li>
+<li><p>Relational data, <code>dplyr</code>’s two table verbs</p></li>
+<li><p>Tidy data</p></li>
+<li><p>Pivoting data, <code>tidyr</code>’s gathering and spreading</p></li>
+</ul>
+</div>
+<div id="data-visualization" class="section level3">
+<h3>Data Visualization</h3>
+<p>Learn to produce meaningful and beautiful data visualisation.</p>
+<ul>
+<li><p>Graphics systems: <code>grid</code>, <code>base</code>, <code>ggplot2</code>, <code>lattice</code></p></li>
+<li><p>Grammar of graphics - <code>ggplot2</code></p></li>
+<li><p>Visualisation basics (1)</p></li>
+<li><p>Exporting graphics</p></li>
+</ul>
+</div>
+<div id="data-modelling" class="section level3">
+<h3>Data Modelling</h3>
+<p>Learn to conduct simple summary statistics and linear regression models.</p>
+<ul>
+<li><p>Descriptive analysis with continuous and categorical variables</p></li>
+<li><p>Statistical tests</p></li>
+<li><p>Visualisation basics (2)</p></li>
+<li><p>Regression analysis, hypothesis testing</p></li>
+</ul>
+</div>
+<div id="data-practices" class="section level3">
+<h3>Data Practices</h3>
+<p>Learn to adopt ‘good enough’ practices when using R.</p>
+<ul>
+<li><p>Data project directory</p></li>
+<li><p>Coding style</p></li>
+<li><p>Documentation</p></li>
+<li><p>Sharing data</p></li>
+</ul>
+</div>
+</div>
 
 
 
