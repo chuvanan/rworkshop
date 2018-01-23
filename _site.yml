@@ -8,7 +8,7 @@ navbar:
     - text: "Curriculum"
       menu:
         - text: "Foundations"
-          href: ./foundations/foundations.html
+          href:
         - text: "Data Import"
           href:
         - text: "Data Manipulation with dplyr"
@@ -18,6 +18,8 @@ navbar:
         - text: "Data Visualisation with ggplot2"
           href:
         - text: "Data Structures"
+          href:
+        - text: "Data Modelling"
           href:
 output:
   html_document:
