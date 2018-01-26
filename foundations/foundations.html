@@ -404,15 +404,6 @@ Obstacle #1: The tool is different from what you know
 Obstacle #2: The mental model underlying the tool is different from your current mental model
 
 ---
-
-# Learning new things is hard
-
-
-- .large[]
-
-
-
----
 background-image: url(patience.gif)
 background-size: 100% 65%
 class: inverse, center, top
@@ -498,12 +489,44 @@ background-size: 70% 50%
 .large[The **Source** pane (R script) is where you keep a record of your work (same as
 do-file in Stata)]
 
+
+---
+
+# Explaining output on slides
+
+.large[In slides, a command (we’ll also call them code or a code chunk) will look
+like this:]
+
+
+```r
+print("I am coding in RStudio")
+```
+
+```
+R&gt; [1] "I am coding in RStudio"
+```
+
+.large[And then directly after it, will be the output of the code.]
+
+
 ---
 
 # Working directory
 
+.large[R associates itself with a folder (i.e. directory) on your computer.]
 
-.large[Working dir is where R will look for files and also write files to]
+- .large[This folder is known as your "working directory"]
+
+- .large[When you save files, R will save them here]
+
+- .large[When you load files, R will look for them here]
+
+
+---
+
+# Working directory
+
+.large[The files pane of the IDE displays the contents of your working directory]
 
 
 
@@ -513,7 +536,7 @@ getwd()
 ```
 
 ```
-R&gt; [1] "/home/anchu/rworkshop/foundations"
+R&gt; [1] "/home/anchu/Dropbox/R-workshop/slides/foundations"
 ```
 
 
@@ -1086,7 +1109,7 @@ reproducible: required packages, data, and code]
 
 # Summary
 
-.large[A fantastic ecosystem, including:]
+.large[R has a fantastic ecosystem, including:]
 
 - .large[An IDE (RStudio) tailored to data analysis and statistical programming]
     

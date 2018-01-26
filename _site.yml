@@ -8,7 +8,7 @@ navbar:
     - text: "Curriculum"
       menu:
         - text: "Foundations"
-          href:
+          href: ./foundations/foundations.html
         - text: "Data Import"
           href:
         - text: "Data Manipulation with dplyr"
