@@ -10,7 +10,7 @@ navbar:
         - text: "Foundations"
           href: ./foundations/foundations.html
         - text: "Data Import"
-          href:
+          href: ./data_import/data_import.html
         - text: "Data Manipulation with dplyr"
           href:
         - text: "Data Tidying with tidyr"
