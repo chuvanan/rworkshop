@@ -12,7 +12,7 @@ navbar:
         - text: "Data Import"
           href: ./data_import/data_import.html
         - text: "Data Manipulation with dplyr"
-          href:
+          href: ./data_manipulation/data_manipulation.html
         - text: "Data Tidying with tidyr"
           href:
         - text: "Data Visualisation with ggplot2"
