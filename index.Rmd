@@ -92,3 +92,6 @@ Learn to adopt 'good enough' practices when using R.
 
 - Sharing data
 
+--------------------------------------------------------------------------------
+
+![](theme_index.png)
