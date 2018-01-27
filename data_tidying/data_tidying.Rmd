@@ -4,7 +4,7 @@ author: ".superhuge[An Chu]"
 date: ".superhuge[12/2017]"
 output:
   xaringan::moon_reader:
-    css: ["default", "/home/anchu/Dropbox/R-workshop/slides/my_theme.css"]
+    css: ["default", "my_theme.css"]
     lib_dir: libs
     nature:
       highlightStyle: github
