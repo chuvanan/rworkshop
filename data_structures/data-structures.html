@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="author" content=".superhuge[An Chu]" />
     <link href="libs/remark-css/example.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/home/anchu/Dropbox/R-workshop/slides/my_theme.css" type="text/css" />
+    <link rel="stylesheet" href="my_theme.css" type="text/css" />
   </head>
   <body>
     <textarea id="source">
@@ -34,7 +34,7 @@ class: center, middle, inverse, title-slide
 - .huge[Everything that happens is a *function* call]
 
 ---
-background-image: url(/home/anchu/Dropbox/R-workshop/slides/data_structures/lego.jpeg)
+background-image: url(lego.jpeg)
 background-size: contain
 class: center, top
 
@@ -74,7 +74,7 @@ Tabular data: excel tables, ...
 is readable by humans and interpretable by computers]
 
 
-![](/home/anchu/Dropbox/R-workshop/slides/data_structures/data_comp.png)
+![](data_comp.png)
 
 
 
@@ -93,7 +93,7 @@ is readable by humans and interpretable by computers]
 - .huge[and whether their contents of the same data type or of different types]
 
 ---
-background-image: url(/home/anchu/Dropbox/R-workshop/slides/data_structures/demo.png)
+background-image: url(demo.png)
 background-size: contain
 
 
@@ -194,7 +194,7 @@ z &lt;- c(1.23, 3.21, 2.35, 2.4, 2.13, 4.56)
 w &lt;- c("a", "b", "c", "d", "e", "f", "g", "h")
 ```
 
-![](/home/anchu/Dropbox/R-workshop/slides/data_structures/atomic_vec.png)
+![](atomic_vec.png)
 
 
 ---
@@ -429,7 +429,7 @@ mat &lt;- cbind(c(1L, 2L, 3L, 4L, 5L),
              c(11L, 12L, 13L, 14L, 15L))
 ```
 
-![](/home/anchu/Dropbox/R-workshop/slides/data_structures/matrix.png)
+![](matrix.png)
 
 ---
 
@@ -444,7 +444,7 @@ mat &lt;- rbind(c(1L, 6L, 11L),
              c(5L, 10L, 15L))
 ```
 
-![](/home/anchu/Dropbox/R-workshop/slides/data_structures/matrix.png)
+![](matrix.png)
 
 ---
 
@@ -455,7 +455,7 @@ mat &lt;- rbind(c(1L, 6L, 11L),
 mat &lt;- matrix(1L:15L, ncol = 3)
 ```
 
-![](/home/anchu/Dropbox/R-workshop/slides/data_structures/matrix.png)
+![](matrix.png)
 
 ---
 
@@ -557,7 +557,7 @@ R&gt; [1] "R1" "R2" "R3" "R4" "R5"
 arr &lt;- array(1L:45L, dim = c(5, 3, 3))
 ```
 
-![](/home/anchu/Dropbox/R-workshop/slides/data_structures/array.png)
+![](array.png)
 
 
 ---
@@ -576,7 +576,7 @@ lt &lt;- list(c("a", "b", "c", "d", "e", "f", "g", "h"),
            c(TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE))
 ```
 
-![](/home/anchu/Dropbox/R-workshop/slides/data_structures/list.png)
+![](list.png)
 
 ---
 
@@ -779,7 +779,7 @@ dtf &lt;- data.frame(x = c("a", "b", "c", "d", "e", "f", "g", "h"),
                   stringsAsFactors = FALSE)
 ```
 
-![](/home/anchu/Dropbox/R-workshop/slides/data_structures/dataframe.png)
+![](dataframe.png)
 
 
 ---
@@ -964,10 +964,10 @@ table(cont_grp)
 
 ```
 R&gt; cont_grp
-R&gt;   (-2.52,-1.93]   (-1.93,-1.34]  (-1.34,-0.757] (-0.757,-0.172] 
-R&gt;               3               7              13              14 
-R&gt;  (-0.172,0.413]   (0.413,0.998]    (0.998,1.58]     (1.58,2.17] 
-R&gt;              34              17               7               5
+R&gt;  (-3.73,-2.87]  (-2.87,-2.01]  (-2.01,-1.16] (-1.16,-0.305] (-0.305,0.549] 
+R&gt;              1              2             11             25             32 
+R&gt;    (0.549,1.4]     (1.4,2.26]    (2.26,3.12] 
+R&gt;             15              9              5
 ```
 
 ---
@@ -991,7 +991,7 @@ class: center, middle
 
 - .huge[Time can be arranged on a time line]
 
-![](/home/anchu/Dropbox/R-workshop/slides/data_structures/timeline.png)
+![](timeline.png)
 
 ---
 
@@ -1003,7 +1003,7 @@ class: center, middle
 
 - .huge[For example: 27/12/2017 21:32:00]
 
-![](/home/anchu/Dropbox/R-workshop/slides/data_structures/instants.png)
+![](instants.png)
 
 
 ---
@@ -1018,7 +1018,7 @@ class: center, middle
 .huge[2 - By description: a unique combination of year, month, day, hour, minute, second, and time zones]
 
 
-![](/home/anchu/Dropbox/R-workshop/slides/data_structures/instants_identifying.png)
+![](instants_identifying.png)
 
 ---
 
@@ -1068,7 +1068,7 @@ unclass(now)
 ```
 
 ```
-R&gt; [1] 1514439582
+R&gt; [1] 1517130405
 ```
 ]
 
@@ -1089,28 +1089,28 @@ unclass(now_lt)
 
 ```
 R&gt; $sec
-R&gt; [1] 41.66494
+R&gt; [1] 45.31456
 R&gt; 
 R&gt; $min
-R&gt; [1] 39
+R&gt; [1] 6
 R&gt; 
 R&gt; $hour
-R&gt; [1] 12
+R&gt; [1] 16
 R&gt; 
 R&gt; $mday
 R&gt; [1] 28
 R&gt; 
 R&gt; $mon
-R&gt; [1] 11
+R&gt; [1] 0
 R&gt; 
 R&gt; $year
-R&gt; [1] 117
+R&gt; [1] 118
 R&gt; 
 R&gt; $wday
-R&gt; [1] 4
+R&gt; [1] 0
 R&gt; 
 R&gt; $yday
-R&gt; [1] 361
+R&gt; [1] 27
 R&gt; 
 R&gt; $isdst
 R&gt; [1] 0
@@ -1159,7 +1159,7 @@ unclass(today)
 ```
 
 ```
-R&gt; [1] 17528
+R&gt; [1] 17559
 ```
 
 
@@ -1234,7 +1234,7 @@ date7 &lt;- "22.10.2004"
 ```
 
 ---
-background-image: url(/home/anchu/Dropbox/R-workshop/slides/data_structures/wakeup.gif)
+background-image: url(wakeup.gif)
 background-size: contain
 class: inverse, center, middle
 
@@ -1373,7 +1373,7 @@ class: inverse, center, middle
 .h0[Wrap-up]
 
 ---
-background-image: url(/home/anchu/Dropbox/R-workshop/slides/data_structures/simple_view_object.png)
+background-image: url(simple_view_object.png)
 background-size: contain
     </textarea>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
