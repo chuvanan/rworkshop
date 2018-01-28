@@ -20,7 +20,7 @@ navbar:
         - text: "Data Visualisation with ggplot2"
           href: ./data_visualisation/data_visualisation.html
         - text: "Data Structures"
-          href:
+          href: ./data_structures/data-structures.html
         - text: "Data Modelling"
           href:
 output:
