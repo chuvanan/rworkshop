@@ -22,7 +22,7 @@ navbar:
         - text: "Data Structures"
           href: ./data_structures/data-structures.html
         - text: "Data Modelling"
-          href:
+          href: ./data_modelling/data_modelling.html
 output:
   html_document:
     theme: flatly
